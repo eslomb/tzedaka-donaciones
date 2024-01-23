@@ -6,6 +6,7 @@ main.home {
 }
 main.home section {
   max-width: 600px;
+  border-radius: 15px;
 }
 main.home section #access {
   max-width: 380px;
