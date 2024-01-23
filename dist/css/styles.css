@@ -1,0 +1,24 @@
+main.home {
+  height: 100dvh;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(115.57deg, rgba(46, 119, 192, 0.78), rgba(54, 46, 147, 0.78) 97.66%), url("https://medicamentos.tzedaka.org.ar/public/background62308891@2x.png");
+}
+main.home section {
+  max-width: 600px;
+}
+main.home section #access {
+  max-width: 380px;
+}
+main.home section #access .btn {
+  color: white;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+main.home section #access .btn-solicitar {
+  background-color: #2e77c0;
+}
+main.home section #access .btn-donar {
+  background-color: #5b248e;
+}
+/*# sourceMappingURL=styles.css.map */
