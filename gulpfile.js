@@ -103,7 +103,7 @@ gulp.task("js:build", function () {
 gulp.task("images:build", function () {
     return gulp
         .src(path.src.images)
-        .pipe(gulp.dest(path.build.dirDev + "img/"))
+        .pipe(gulp.dest(path.build.dirDev + "images/"))
         .pipe(
             bs.reload({
                 stream: true,

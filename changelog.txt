@@ -1,0 +1,7 @@
+
+v 0.2
+    Mods pantalla Inicio
+    Pantalla gracias
+
+v 0.1
+    Pantalla Inicio

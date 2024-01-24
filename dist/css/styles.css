@@ -1,24 +1,53 @@
-main.home {
-  height: 100dvh;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+body:has(main.page-centered) {
+  background-color: #2E77C0;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(115.57deg, rgba(46, 119, 192, 0.78), rgba(54, 46, 147, 0.78) 97.66%), url("https://medicamentos.tzedaka.org.ar/public/background62308891@2x.png");
+  background-image: url("../images/bg1.jpg");
 }
-main.home section {
+
+main.page-centered {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+main.page-centered section {
   max-width: 600px;
+  font-size: 0.875rem;
 }
-main.home section #access {
+main.page-centered section header img {
+  max-width: 150px;
+}
+main.page-centered section h3 {
+  font-size: calc(1rem + 0.5vw);
+  font-weight: 700;
+}
+main.page-centered section .buttons {
   max-width: 380px;
 }
-main.home section #access .btn {
+main.page-centered section .buttons .btn {
   color: white;
   margin-bottom: 1em;
-  font-weight: bold;
+  font-weight: 500;
+  padding: 1em;
 }
-main.home section #access .btn-solicitar {
+main.page-centered section .buttons .btn i {
+  margin-right: 10px;
+}
+main.page-centered section .buttons .btn-solicitar {
   background-color: #2e77c0;
 }
-main.home section #access .btn-donar {
+main.page-centered section .buttons .btn-solicitar:hover {
+  background-color: rgba(46, 119, 192, 0.8);
+}
+main.page-centered section .buttons .btn-donar {
   background-color: #5b248e;
+}
+main.page-centered section .buttons .btn-donar:hover {
+  background-color: rgba(91, 36, 142, 0.8);
+}
+
+body {
+  font-family: "Inter";
+  color: #181C32;
 }
 /*# sourceMappingURL=styles.css.map */
