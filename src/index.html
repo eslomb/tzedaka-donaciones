@@ -1,50 +1,48 @@
 @@include('./header.html', {
-    title: 'Tzedaka'
+    title: 'Fundación Tzedaka'
 })
 
-    <main class="page-centered p-1 p-md-5 d-grid align-items-center ">
-        <section class="py-3 px-5 mx-auto bg-white rounded-5 ">
-    
-            <header class="d-flex flex-wrap align-items-center justify-content-between">
-                <img class="d-block" alt="Fundación Tzedaka"
-                    src="images/logotzedaka-1@2x.png">
-                <img class="d-block" alt="Banco Comunitario de Medicamentos"
+    <main class="page-bg-type-A p-1 p-md-5 d-grid align-items-center ">
+        <section class="py-3 px-3 px-sm-5 mx-auto bg-white rounded-5" style="max-width: 600px;">
+            
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between logos">
+                @@include('logo.html')
+
+                <img alt="Banco Comunitario de Medicamentos"
                     src="images/logoprograma-salud-1@2x.png">
             </header>
     
             <div class="text-center">
-                <h3 class="pt-5 pb-3">
+                <h3 class="pt-5 pb-3 fs-4 fw-bold">
                     ¡Bienvenidos!<br>
                     Al Banco Comunitario de Medicamentos
                 </h3>
-                <p>
+                <p class="text-smaller">
                     El Banco Comunitario de Medicamentos es el programa de la
                     Fundación Tzedaká de provisión gratuita de medicamentos a personas
                     en situación de vulnerabilidad en todo el país.
                 </p>
-                <p>
+                <p class="text-smaller">
                     Con nuestro equipo de voluntarios y farmacéuticos convertimos las
                     donaciones que recibimos en tratamientos médicos que -a través de
                     una red formada por hospitales públicos, centros de salud y
                     organizaciones sociales- llegan a más de 50.000 personas.
                 </p>
                 <div class="buttons pt-3 d-grid gap-2 mx-auto">
-                    <a href="#" class="btn btn-solicitar">
-                        <i class="bi bi-basket"></i> Solicitar medicamento
-                        Institución
-                    </a href="#">
-                    <a href="#" class="btn btn-solicitar">
-                        <i class="bi bi-capsule"></i> Solicitar
-                        medicamento Particular
-                    </a href="#">
-                    <a href="#" class="btn btn-donar">
+                    <a href="#" class="btn btn-azul">
+                        <i class="bi bi-basket"></i> Solicitar medicamento Institución
+                    </a>
+                    <a href="#" class="btn btn-azul">
+                        <i class="bi bi-capsule"></i> Solicitar medicamento Particular
+                    </a>
+                    <a href="donar-paso1.html" class="btn btn-violeta">
                         <i class="bi bi-gift"></i> Donar medicamento
-                    </a href="#">
+                    </a>
                 </div>
             </div>
         </section>
     
     </main>
 
-
+    
 @@include('./footer.html')

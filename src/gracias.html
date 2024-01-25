@@ -1,38 +1,40 @@
 @@include('./header.html', {
-    title: 'Tzedaka'
+    title: '¡Gracias!'
 })
 
-    <main class="page-centered p-1 p-md-5 d-grid align-items-center ">
-        <section class="py-5 px-5 mx-auto bg-white rounded-5 ">
+    <main class="page-bg-type-A p-1 p-md-5 d-grid align-items-center ">
+        <section class="py-5 px-3 px-sm-5 mx-auto bg-white rounded-5 " style="max-width: 700px;">
     
-            <header class="d-flex flex-wrap justify-content-center align-items-center">
+            <header class="d-flex flex-wrap justify-content-center align-items-center logos">
                 <img class="d-block" alt="Fundación Tzedaka"
                     src="images/logotzedaka-1@2x.png">
             </header>
     
             <div class="text-center">
-                <h3 class="pt-3 pb-3">
-                    ¡Muchas gracias por tu ayuda, {{nombre}}!
+                <h3 class="pt-3 pb-3 color-azul fw-bolder">
+                    ¡Muchas gracias por tu ayuda<br>
+                    {{nombre}}!
                 </h3>
-                <h4>Te esperamos en:<br>
-                    {{Centro seleccionado}} - <br>
-                {{ Direccion / día / hora }}</h4>
+                <h4>Te esperamos en:</h4>
+                <ul class="list-unstyled fs-5">
+                    <li>{ Centro seleccionado }</li>
+                    <li>{ Direccion / día / hora }</li>
+                </ul>
                 <h5>
                     No olvides rotular tu donación indicando tu nombre y apellido.
                     ¡Saludos!
                 </h5>
                 <div class="buttons pt-3 d-grid gap-2 mx-auto">
-                    <a href="index.html" class="btn btn-solicitar">
+                    <a href="index.html" class="btn btn-azul">
                         <i class="bi bi-house-door"></i> 
                         Volver al Inicio
                     </a>
                 </div>
-                <p class="mx-auto mb-0" style="max-width: 300px;">
+                <p class="mx-auto mb-0 text-smaller" style="max-width: 300px;">
                     Por cualquier inconveniente o duda, contactanos vía Whatsapp <a href="tel:+5491134823009">11-3482-3009</a>
                 </p>
             </div>
         </section>
-    
     </main>
 
 

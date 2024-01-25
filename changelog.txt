@@ -1,3 +1,8 @@
+v 0.3
+    Pantalla Donaciones paso 1
+    Reorganzación de estilos
+    Mods pantallas Inicio y gracias
+    /src/parts/: back-to-home.html, logo.html
 
 v 0.2
     Mods pantalla Inicio

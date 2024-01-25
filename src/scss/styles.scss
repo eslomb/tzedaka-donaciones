@@ -1,9 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+@import 'breakpoints';
 @import 'colors';
-@import 'home';
 
 body{
     font-family: 'Inter';
     color: $color-body;
+    
+    & > main{
+        min-height: 100vh;
+        min-height: 100dvh;
+    }
+
+    a{
+        text-decoration: none;
+        &:hover{
+            color: $color-link;
+        }
+    }
 }
+
+@import 'page';
+

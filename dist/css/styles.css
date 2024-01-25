@@ -1,53 +1,175 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-body:has(main.page-centered) {
-  background-color: #2E77C0;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../images/bg1.jpg");
+.color-azul {
+  color: #2E77C0;
 }
 
-main.page-centered {
-  min-height: 100vh;
-  min-height: 100dvh;
+.color-violeta {
+  color: #5B248E;
 }
-main.page-centered section {
-  max-width: 600px;
-  font-size: 0.875rem;
-}
-main.page-centered section header img {
-  max-width: 150px;
-}
-main.page-centered section h3 {
-  font-size: calc(1rem + 0.5vw);
-  font-weight: 700;
-}
-main.page-centered section .buttons {
-  max-width: 380px;
-}
-main.page-centered section .buttons .btn {
-  color: white;
-  margin-bottom: 1em;
-  font-weight: 500;
-  padding: 1em;
-}
-main.page-centered section .buttons .btn i {
-  margin-right: 10px;
-}
-main.page-centered section .buttons .btn-solicitar {
-  background-color: #2e77c0;
-}
-main.page-centered section .buttons .btn-solicitar:hover {
-  background-color: rgba(46, 119, 192, 0.8);
-}
-main.page-centered section .buttons .btn-donar {
-  background-color: #5b248e;
-}
-main.page-centered section .buttons .btn-donar:hover {
-  background-color: rgba(91, 36, 142, 0.8);
+
+.color-link {
+  color: #009EF6;
 }
 
 body {
   font-family: "Inter";
   color: #181C32;
+}
+body > main {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+body a {
+  text-decoration: none;
+}
+body a:hover {
+  color: #009EF6;
+}
+
+body:has(main.page-bg-type-A) {
+  background-color: #2E77C0;
+}
+@media (min-width: 576px) {
+  body:has(main.page-bg-type-A) {
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../images/bg1.jpg");
+  }
+}
+
+body:has(main.page-bg-type-B) {
+  background-color: #e7e7e7;
+}
+@media (min-width: 576px) {
+  body:has(main.page-bg-type-B) {
+    background-image: url("../images/bg2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+section header.logos img {
+  max-width: 180px;
+}
+section:is(.form-right) {
+  padding: 5%;
+}
+section:is(.form-right) header {
+  text-align: center;
+  padding: 5% 2%;
+}
+section:is(.form-right) aside {
+  background-color: white;
+  padding: 1.5em 2em;
+  border-radius: 2em;
+  margin: auto;
+}
+section:is(.form-right) aside .breadcrumb {
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  section:is(.form-right) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  section:is(.form-right) header {
+    justify-content: center;
+    flex: 1;
+  }
+  section:is(.form-right) aside {
+    flex-basis: 576px;
+    margin: auto;
+  }
+}
+
+.text-smaller {
+  font-size: 0.875rem;
+}
+
+.buttons .btn {
+  color: white;
+  margin-bottom: 1em;
+  font-weight: 500;
+  padding: 1em;
+}
+.buttons .btn i {
+  margin-right: 10px;
+}
+.buttons .btn-azul {
+  background-color: #2E77C0;
+}
+.buttons .btn-azul:hover {
+  background-color: rgba(46, 119, 192, 0.8);
+}
+.buttons .btn-violeta {
+  background-color: #5B248E;
+}
+.buttons .btn-violeta:hover {
+  background-color: rgba(91, 36, 142, 0.8);
+}
+
+dl.list {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 2em 0;
+  align-items: center;
+  margin-bottom: 1em;
+  line-height: 1.3;
+}
+dl.list dt {
+  padding-left: 12px;
+}
+dl.list dt .hexagon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(143, 143, 143);
+  color: white;
+  position: relative;
+  width: 24px;
+  height: calc(24px * 1.732);
+  border-radius: calc(24px / 8);
+  transform: rotate(90deg);
+}
+dl.list dt .hexagon.azul {
+  background-color: #2E77C0;
+}
+dl.list dt .hexagon.violeta {
+  background-color: #5B248E;
+}
+dl.list dt .hexagon:before, dl.list dt .hexagon:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: inherit;
+  border-radius: inherit;
+}
+dl.list dt .hexagon:before {
+  transform: rotate(60deg);
+}
+dl.list dt .hexagon:after {
+  transform: rotate(-60deg);
+}
+dl.list dt .hexagon b, dl.list dt .hexagon strong {
+  position: absolute;
+  z-index: 10;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transform: rotate(-90deg);
+}
+dl.list dd {
+  font-weight: bold;
+}
+
+.breadcrumb {
+  color: #666871;
+}
+.breadcrumb a {
+  color: #009EF6;
+}
+.breadcrumb i {
+  color: inherit;
 }
 /*# sourceMappingURL=styles.css.map */
