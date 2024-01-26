@@ -1,4 +1,13 @@
 
+// Estilos generales -------------
+.text-smaller{
+	font-size: 0.875rem;
+}
+
+
+
+// Fondos de página --------------
+
 body:has(main.page-bg-type-A){
     background-color: $color-azul;
 	@media (min-width: $sm) {
@@ -18,6 +27,9 @@ body:has(main.page-bg-type-B){
 	}    
 }
 
+
+
+// sección interior de página, dentor de main ------------
 section{
 	header{
 		&.logos{
@@ -62,19 +74,16 @@ section{
 }
 
 
-.text-smaller{
-	font-size: 0.875rem;
-}
-
+// donde se agregan los botones de formulario, siguiente, etc. ------------
 .buttons{
     .btn{
         color: white;
         margin-bottom: 1em;
         font-weight: 500;
         padding: 1.0em ;
-        i{
-            margin-right: 10px;
-        }
+        display: flex;
+		justify-content: center;
+		gap: 5px;
     }
     .btn-azul{
         background-color: $color-azul;
@@ -90,6 +99,9 @@ section{
     }
 }
 
+
+
+// listado con viñetas paso 1
 dl.list{
 	display: grid;
 	grid-template-columns: 60px 1fr;
@@ -146,7 +158,11 @@ dl.list{
     }
 }
 
+
+// Estilos particulares de elementos -------------
+
 .breadcrumb{
+	// para volver a Inicio
     color: $color-gris-txt;
     a{
         color: $color-link;
@@ -154,4 +170,33 @@ dl.list{
     i{
         color: inherit; 
     }
+}
+
+
+div.outlined{
+	background-color: #EEF6FF;
+	border-radius: 5px;
+	border-style: dashed;
+	border-color: #3E97FF;
+	border-width: 2px;
+	i{
+		color: $color-azul
+	}
+}
+
+form{
+	input[type="text"],
+	input[type="email"],
+	input[type="number"],
+	select,
+	textarea,
+	div.form-check{
+		margin-bottom: 1em;
+	}
+
+	textarea{
+		height: 120px;
+	}
+	
+
 }

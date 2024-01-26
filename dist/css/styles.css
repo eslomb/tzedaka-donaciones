@@ -26,6 +26,10 @@ body a:hover {
   color: #009EF6;
 }
 
+.text-smaller {
+  font-size: 0.875rem;
+}
+
 body:has(main.page-bg-type-A) {
   background-color: #2E77C0;
 }
@@ -83,18 +87,14 @@ section:is(.form-right) aside .breadcrumb {
   }
 }
 
-.text-smaller {
-  font-size: 0.875rem;
-}
-
 .buttons .btn {
   color: white;
   margin-bottom: 1em;
   font-weight: 500;
   padding: 1em;
-}
-.buttons .btn i {
-  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 .buttons .btn-azul {
   background-color: #2E77C0;
@@ -171,5 +171,28 @@ dl.list dd {
 }
 .breadcrumb i {
   color: inherit;
+}
+
+div.outlined {
+  background-color: #EEF6FF;
+  border-radius: 5px;
+  border-style: dashed;
+  border-color: #3E97FF;
+  border-width: 2px;
+}
+div.outlined i {
+  color: #2E77C0;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=number],
+form select,
+form textarea,
+form div.form-check {
+  margin-bottom: 1em;
+}
+form textarea {
+  height: 120px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,6 @@
+v 0.4
+    Pantalla Donaciones paso 2
+
 v 0.3
     Pantalla Donaciones paso 1
     Reorganzación de estilos
