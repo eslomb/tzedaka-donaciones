@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitud medicamentos particulares</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<main class="bg3">
+    <section class="form-right">
+        <header class="logos">
+            <img alt="Fundación Tzedaka" src="images/logo-Tzedaka.png" >
+        </header>
+        <aside>
+            <nav class="breadcrumb py-3"><i class="bi bi-house-door"></i> > <a href="index.html">Volver</a></nav>
+
+            <h3 class="text-center fs-4 fw-bold">Solicitud medicamentos particulares</h3>
+            <h4 class="text-center fs-5 fw-normal mb-4">Por favor completá la siguiente información:</h4>
+
+            <form action="">
+
+                <fieldset>
+                    <input type="text" class="form-control" placeholder="Nombre" required>
+                    <input type="text" class="form-control" placeholder="Apellido" required>
+                    <div class="input-group">
+                        <select class="form-select" required style="max-width: 110px;">
+                            <option selected>DNI</option>
+                            <option>Pasaporte</option>
+                        </select>
+                        <input type="text" class="form-control" placeholder="Número de documento" required>
+                    </div>
+
+                    <div class="row mb-2">
+                        <label class="col-sm-2 col-form-label col-form-label-sm">Género</label>
+                        <div class="col-sm-10">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="genero" id="genero-m" value="M">
+                                <label class="form-check-label" for="genero-m">M</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="genero" id="genero-F" value="F">
+                                <label class="form-check-label" for="genero-F">F</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <input type="text" class="form-control" placeholder="Fecha de nacimiento" required>
+                    <select class="form-select" required>
+                        <option value="0" selected>Estado civil</option>
+                        <option value="1">Soltero</option>
+                        <option value="2">Casado</option>
+                        <option value="3">Unión civil</option>
+                        <option value="4">Divorciado</option>
+                        <option value="5">Separado</option>
+                    </select>
+                    <select class="form-select" required>
+                        <option value="" selected>Nacionalidad</option>
+                        <option value="1">Argentina</option>
+                        <option value="2">Otro</option>
+                    </select>
+                    <input type="text" class="form-control" placeholder="Dirección" required>
+                    <input type="text" class="form-control" placeholder="Celular (con cód de área)" required>
+                    <input type="text" class="form-control" placeholder="Teléfono fijo">
+                    <input type="email" class="form-control" placeholder="Correo electrónico" required>
+
+                    <!-- <div class="upload-box">
+                        <p class="text-center fs-5"><label for="file1"><i class="bi bi-upload color-link fs-4"></i></label> Carta Membretada</p>
+                        <input type="file" class="form-control" id="file1">
+                    </div> -->
+                    <div class="upload-box mb-3">
+    <p class="text-center fs-5"><label for="file1"><i class="bi bi-upload color-link fs-4"></i></label> Carta Membretada</p>
+    <input type="file" class="form-control" id="file1">
+</div>
+                    <div class="upload-box mb-3">
+    <p class="text-center fs-5"><label for="file2"><i class="bi bi-upload color-link fs-4"></i></label> Listado de medicamentos</p>
+    <input type="file" class="form-control" id="file2">
+</div>
+                    <div class="upload-box mb-3">
+    <p class="text-center fs-5"><label for="file3"><i class="bi bi-upload color-link fs-4"></i></label> Carta Compromiso</p>
+    <input type="file" class="form-control" id="file3">
+</div>
+                </fieldset>
+
+                <footer>
+                    
+                    
+                    <div class="buttons pt-3 d-grid gap-2 mx-auto">                
+                        <a href="gracias.html" class="btn btn-azul">Enviar formulario <i class="bi bi-check"></i></a>
+                        <!-- Debe reemplazarse por un button.submit -->
+                    </div>
+
+                </footer>
+            </form>
+        </aside>
+    </section>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

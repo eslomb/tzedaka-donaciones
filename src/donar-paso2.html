@@ -2,7 +2,7 @@
     title: 'Registrate como donante'
 })
 
-<main class="page-bg-type-B">
+<main class="bg2">
     <section class="form-right">
         <header class="logos">
             @@include('./logo.html')
@@ -130,15 +130,14 @@
                 </fieldset>
 
                 <footer>
-                    <div class="outlined d-flex align-items-center my-3 py-4 px-2">
-                        <div class="px-2">
-                            <i class="bi bi-exclamation-circle-fill"></i>
-                        </div>
-                        <p class="mb-0 px-2">
-                            <b>Importante</b><br>
-                            Por favor, te pedimos que rotules tu donación indicando nombre y apellido o nombre de la institución.
-                        </p>
-                    </div>
+                    @@include('./box.html',
+                        {
+                            box_class: 'box-info', 
+                            bi_icon: 'bi-exclamation-circle-fill',
+                            title: 'Importante',
+                            description: 'Por favor, te pedimos que rotules tu donación indicando nombre y apellido o nombre de la institución.'
+                        }
+                    )                   
                     
                     <div class="buttons pt-3 d-grid gap-2 mx-auto">                
                         <a href="gracias.html" class="btn btn-violeta">Enviar formulario <i class="bi bi-check"></i></a>

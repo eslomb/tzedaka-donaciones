@@ -21,49 +21,79 @@ body > main {
 }
 body a {
   text-decoration: none;
+  color: #009EF6;
+  transition: all 0.2s;
 }
 body a:hover {
-  color: #009EF6;
+  color: black;
 }
 
 .text-smaller {
   font-size: 0.875rem;
 }
 
-body:has(main.page-bg-type-A) {
+body:has(main.bg1) {
   background-color: #2E77C0;
 }
 @media (min-width: 576px) {
-  body:has(main.page-bg-type-A) {
+  body:has(main.bg1) {
     background-attachment: fixed;
     background-size: cover;
-    background-image: url("../images/bg1.jpg");
+    background-image: url("../images/backgrounds/bg1.jpg");
   }
 }
 
-body:has(main.page-bg-type-B) {
+body:has(main.bg2) {
   background-color: #e7e7e7;
 }
 @media (min-width: 576px) {
-  body:has(main.page-bg-type-B) {
-    background-image: url("../images/bg2.jpg");
+  body:has(main.bg2) {
+    background-image: url("../images/backgrounds/bg2.jpg");
     background-size: cover;
     background-attachment: fixed;
   }
 }
 
-body:has(main.page-bg-type-D) header {
-  background-image: url("../images/bg-img-header-faq.jpg");
+body:has(main.bg3) {
+  background-color: #e7e7e7;
+}
+@media (min-width: 576px) {
+  body:has(main.bg3) {
+    background-image: url("../images/backgrounds/bg3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+body:has(main.bg4) {
+  background-color: #e7e7e7;
+}
+@media (min-width: 576px) {
+  body:has(main.bg4) {
+    background-image: url("../images/backgrounds/bg4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+body:has(main.bg-faq) header {
+  background-image: url("../images/backgrounds/bg-header-faq.jpg");
   background-size: cover;
+  background-position: center center;
   border-radius: 15px;
   margin-top: 25px;
-  padding: 4.5em;
+  padding: 6vw;
+}
+
+main {
+  padding: 5%;
 }
 
 section header.logos img {
   max-width: 180px;
 }
-section:is(.form-right) {
+section.form-centered {
+  max-width: 600px;
   padding: 5%;
 }
 section:is(.form-right) header {
@@ -73,6 +103,7 @@ section:is(.form-right) header {
 section:is(.form-right) aside {
   background-color: white;
   padding: 1.5em 2em;
+  padding: 5%;
   border-radius: 2em;
   margin: auto;
 }
@@ -140,12 +171,6 @@ dl.list dt .hexagon {
   border-radius: calc(24px / 8);
   transform: rotate(90deg);
 }
-dl.list dt .hexagon.azul {
-  background-color: #2E77C0;
-}
-dl.list dt .hexagon.violeta {
-  background-color: #5B248E;
-}
 dl.list dt .hexagon:before, dl.list dt .hexagon:after {
   content: "";
   position: absolute;
@@ -169,6 +194,12 @@ dl.list dt .hexagon b, dl.list dt .hexagon strong {
 }
 dl.list dd {
   font-weight: bold;
+}
+dl.list.violeta dt .hexagon {
+  background-color: #5B248E;
+}
+dl.list.azul dt .hexagon {
+  background-color: #2E77C0;
 }
 
 .accordion-container {
@@ -233,14 +264,16 @@ dl.list dd {
   color: inherit;
 }
 
-div.outlined {
+div.box {
+  border-width: 2px;
   background-color: #EEF6FF;
   border-radius: 5px;
   border-style: dashed;
-  border-color: #3E97FF;
-  border-width: 2px;
 }
-div.outlined i {
+div.box.box-info {
+  border-color: #3E97FF;
+}
+div.box.box-info i {
   color: #2E77C0;
 }
 
@@ -254,5 +287,9 @@ form div.form-check {
 }
 form textarea {
   height: 120px;
+}
+form div.upload-box {
+  border: 1px dashed #E4E6EF;
+  padding: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

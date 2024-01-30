@@ -8,36 +8,58 @@
 
 // Fondos de página --------------
 
-body:has(main.page-bg-type-A){
+body:has(main.bg1){
     background-color: $color-azul;
 	@media (min-width: $sm) {
 		// background-position: center;
 		background-attachment: fixed;
 		background-size: cover;
-		background-image: url('../images/bg1.jpg');		
+		background-image: url('../images/backgrounds/bg1.jpg');		
 	}
 }
-body:has(main.page-bg-type-B){
+body:has(main.bg2){
 	background-color: #e7e7e7 ;
 	@media (min-width: $sm) {
-		background-image: url('../images/bg2.jpg');
+		background-image: url('../images/backgrounds/bg2.jpg');
 		background-size: cover;
 		// background-position: center center;
 		background-attachment: fixed;
 	}    
 }
-body:has(main.page-bg-type-D){
-	header{
-		background-image: url('../images/bg-img-header-faq.jpg');
+body:has(main.bg3){
+	background-color: #e7e7e7 ;
+	@media (min-width: $sm) {
+		background-image: url('../images/backgrounds/bg3.jpg');
 		background-size: cover;
+		// background-position: center center;
+		background-attachment: fixed;
+	}    
+}
+body:has(main.bg4){
+	background-color: #e7e7e7 ;
+	@media (min-width: $sm) {
+		background-image: url('../images/backgrounds/bg4.jpg');
+		background-size: cover;
+		// background-position: center center;
+		background-attachment: fixed;
+	}    
+}
+body:has(main.bg-faq){
+	header{
+		background-image: url('../images/backgrounds/bg-header-faq.jpg');
+		background-size: cover;
+		background-position: center center;
 		border-radius: 15px;
 		margin-top: 25px;
-		padding: 4.5em;
+		padding: 6vw;
 	}
 }
 
 
 // sección interior de página, dentor de main ------------
+main{
+	padding: 5%;
+}
 section{
 	header{
 		&.logos{
@@ -46,9 +68,14 @@ section{
 			}
 		}
 	}
+	&.form-centered{
+		max-width: 600px; padding: 5%;		
+	}
 
-	&:is(.form-right){
-		padding: 5%;
+	&:is(.form-right)
+	{
+		// para las pantallas con formulario a la derecha
+		
 		header{
 			text-align: center;
 			padding: 5% 2%;
@@ -56,6 +83,7 @@ section{
 		aside{
 			background-color: white;
 			padding: 1.5em 2em;
+			padding: 5%;
 			border-radius: 2em;
 			margin: auto;
 			.breadcrumb{
@@ -132,12 +160,7 @@ dl.list{
 			// border-radius: 1em / 5em;
 			border-radius: calc( #{$w} / 8 );
 			transform: rotate(90deg);
-            &.azul{
-                background-color: $color-azul;
-            }
-            &.violeta{
-                background-color: $color-violeta;
-            }
+            
 			&:before, &:after{
 				content: '';
 				position: absolute;
@@ -164,6 +187,21 @@ dl.list{
     dd{
         font-weight: bold;
     }
+
+	&.violeta{
+		dt{
+			.hexagon{
+                background-color: $color-violeta;
+			}
+		}
+	}
+	&.azul{
+		dt{
+			.hexagon{
+                background-color: $color-azul;
+			}
+		}
+	}
 }
 
 
@@ -238,14 +276,16 @@ dl.list{
 }
 
 
-div.outlined{
+div.box{
+	border-width: 2px;
 	background-color: #EEF6FF;
 	border-radius: 5px;
 	border-style: dashed;
-	border-color: #3E97FF;
-	border-width: 2px;
-	i{
-		color: $color-azul
+	&.box-info{
+		border-color: #3E97FF;
+		i{
+			color: $color-azul
+		}
 	}
 }
 
@@ -264,4 +304,11 @@ form{
 	}
 	
 
+	div.upload-box{
+		border: 1px dashed #E4E6EF;
+		padding: 10px;
+	}
+
 }
+
+

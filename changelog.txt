@@ -1,3 +1,8 @@
+v 0.6
+    ajustes de espacio en contenedores
+    imagenes de background en una carpeta separada. Nuevas classes.
+    Pantalla Solicitud medicamentos particulares
+    
 v 0.5
     Pantalla Preguntas frecuentes
 

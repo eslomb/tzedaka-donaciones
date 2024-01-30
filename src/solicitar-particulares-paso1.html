@@ -1,0 +1,48 @@
+@@include('./header.html', {
+    title: 'Solicitud medicamentos pacientes particulares'
+})
+
+<main class="bg3">
+    <section class="form-right">
+        <header class="logos">
+            @@include('./logo.html')
+        </header>
+        <aside>
+            @@include('./back-to-home.html')
+
+            <h3 class="text-center fs-4 fw-bold">Solicitud medicamentos.<br>Pacientes particulares</h3>
+            <h4 class="text-center py-4 fs-6 fw-normal">Requisitos:</h4>
+
+            <dl class="list azul">
+                <dt><span class="hexagon"><b>1</b></span></dt>
+                <dd>Validez de la receta</dd>
+            
+                <dt><span class="hexagon"><b>2</b></span></dt>
+                <dd>Prescripta por un profesional médico de un hospital o centro de salud público</dd>
+
+                <dt><span class="hexagon"><b>3</b></span></dt>
+                <dd>El programa es únicamente para pacientes sin cobertura médica</dd>
+            
+                <dt><span class="hexagon"><b>4</b></span></dt>
+                <dd>La entrega de medicamentos está condicionada al stock disponible</dd>
+            
+            </dl>
+
+            @@include('./box.html',
+                {
+                    box_class: 'box-info', 
+                    bi_icon: 'bi-chat-square-text-fill',
+                    title: 'Preguntas frecuentes',
+                    description: 'Para conocer como deben ser los adjuntos y otra información, <a href="preguntas-frecuentes.html">haga click aquí</a> '
+                }
+            )
+
+            <div class="buttons pt-3 d-grid gap-2 mx-auto">                
+                <a href="solicitar-particulares-paso2.html" class="btn btn-azul">Siguiente <i class="bi bi-arrow-right-short"></i></a>
+            </div>
+        </aside>
+    </section>
+</main>
+
+
+@@include('./footer.html')
