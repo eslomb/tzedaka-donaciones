@@ -86,24 +86,24 @@ body:has(main.bg-faq) header {
 }
 
 main {
-  padding: 5%;
+  padding: 25px 5%;
 }
 
 section header.logos img {
   max-width: 180px;
 }
 section.form-centered {
+  padding: 25px 5%;
   max-width: 600px;
-  padding: 5%;
 }
 section:is(.form-right) header {
   text-align: center;
-  padding: 5% 2%;
+  padding: 50px 0 25px;
 }
 section:is(.form-right) aside {
   background-color: white;
   padding: 1.5em 2em;
-  padding: 5%;
+  padding: 25px 5%;
   border-radius: 2em;
   margin: auto;
 }

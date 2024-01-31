@@ -1,3 +1,8 @@
+v 0.65
+    nuevos ajustes de espacio en main y section
+    Datepicker para Fecha de nacimiento 
+    Ajuste de Upload box
+
 v 0.6
     ajustes de espacio en contenedores
     imagenes de background en una carpeta separada. Nuevas classes.

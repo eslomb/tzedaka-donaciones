@@ -40,7 +40,8 @@
                         </div>
                     </div>
                     
-                    <input type="text" class="form-control" placeholder="Fecha de nacimiento" required>
+                    <input type="text" class="form-control datepicker1" placeholder="Fecha de nacimiento" required>
+
                     <select class="form-select" required>
                         <option value="0" selected>Estado civil</option>
                         <option value="1">Soltero</option>
@@ -81,6 +82,16 @@
         </aside>
     </section>
 </main>
+
+<script>
+    const elem = document.querySelector('input.datepicker1');
+    const datepicker = new Datepicker(elem, {
+        language: 'es',
+        autohide: true,
+        format: 'dd/mm/yyyy',
+        maxDate: 'today'
+    }); 
+</script>
 
 
 @@include('./footer.html')
