@@ -1,0 +1,122 @@
+@@include('./header.html', {
+    title: 'Solicitud medicamentos. Instituciones'
+})
+
+<main class="bg3">
+    <section class="form-right">
+        <header class="logos">
+            @@include('./logo.html')
+        </header>
+        <aside>
+            @@include('./back-to-home.html')
+
+            <h3 class="text-center fs-4 fw-bold">Solicitud medicamentos.<br>Instituciones</h3>
+            <h4 class="text-center fs-5 fw-normal mb-4">Por favor te pedimos que completes la siguiente información:</h4>
+
+            <form action="">
+
+                <fieldset>
+                    <h4 class="fs-6"><b>Población atendida</b></h4>
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <h5 class="fs-6 fw-bold mt-4 mb-3">Franja etaria</h5>
+        
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="ninos">
+                                <label class="form-check-label" for="ninos">Niños y niñas</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="jovenes">
+                                <label class="form-check-label" for="jovenes">Jóvenes y adultos</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="adultos">
+                                <label class="form-check-label" for="adultos">Adultos mayores</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="fs-6 fw-bold mt-4 mb-3">Localización:</h5>
+        
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="rural">
+                                <label class="form-check-label" for="rural">Rural</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="urbana">
+                                <label class="form-check-label" for="urbana">Urbana</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <h5 class="fs-6 fw-bold mt-4 mb-3">Situación social</h5>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="situacion_calle">
+                        <label class="form-check-label" for="calle">Personas en situación de calle</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="pueblos_originarios">
+                        <label class="form-check-label" for="pueblos_originarios">Pueblos originarios</label>
+                    </div><div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="barrios_emergencia">
+                        <label class="form-check-label" for="barrios_emergencia">Personas en barrios de emergencia</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="personas_discapacidad">
+                        <label class="form-check-label" for="personas_discapacidad">Personas con discapacidad</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="refugiados">
+                        <label class="form-check-label" for="refugiados">Refugiados</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="linea_pobreza">
+                        <label class="form-check-label" for="linea_pobreza">Personas debajo de la línea de pobreza</label>
+                    </div>
+
+                    <h5 class="fs-6 fw-bold mt-4 mb-3">Servicios que ofrece la institución</h5>
+                    <textarea class="form-control" id="servicios" rows="3"></textarea>
+                    
+                    <h5 class="fs-6 fw-bold mt-4 mb-3">Cantidad mensual estimada de pacientes atendidos</h5>
+                    <input class="form-control" type="text" id="pacientes">
+
+                    <h5 class="fs-6 fw-bold mt-4 mb-3">Comentarios</h5>
+                    <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                    
+
+                    
+                </fieldset>
+
+                <footer>
+                    
+                    <div class="buttons pt-3 d-grid gap-2 mx-auto">                
+                        <a href="gracias.html?m=solicitud-instituciones" class="btn btn-azul">Enviar <i class="bi bi-check"></i></a>
+                        <!-- Debe reemplazarse por un button.submit -->
+                    </div>
+
+                </footer>
+            </form>
+        </aside>
+    </section>
+</main>
+
+<script>
+    const elem = document.querySelector('input.datepicker1');
+    const datepicker = new Datepicker(elem, {
+        language: 'es',
+        autohide: true,
+        format: 'dd/mm/yyyy',
+        maxDate: 'today'
+    }); 
+</script>
+
+
+@@include('./footer.html')

@@ -35,7 +35,7 @@
             <h4 class="text-center fs-5 fw-normal mb-4">Por favor completá la siguiente información:</h4>
 
             <form action="">
-                <select class="form-select" aria-label="Tipo de donante" id="tipoDonante">
+                <select class="form-select" id="tipoDonante">
                     <option selected>Seleccionar tipo de donante...</option>
                     <option value="particular">Particular</option>
                     <option value="laboratorio">Laboratorio Farmacéutico</option>
@@ -162,7 +162,7 @@
 </div>                   
                     
                     <div class="buttons pt-3 d-grid gap-2 mx-auto">                
-                        <a href="gracias.html" class="btn btn-violeta">Enviar formulario <i class="bi bi-check"></i></a>
+                        <a href="gracias.html?m=donacion" id="btn-submit" class="btn btn-violeta">Enviar formulario <i class="bi bi-check"></i></a>
                         <!-- Debe reemplazarse por un button.submit -->
                     </div>
 
@@ -171,7 +171,6 @@
         </aside>
     </section>
 </main>
-
 
 <script>
     // --------------------------------
@@ -194,6 +193,19 @@
         }
     }
 
+
+
+    // -------------------------- 
+    // modificar la url de envio según la opción seleccionada. Solo para desarrollo. 
+    // -------------------------- 
+    
+    let btnSubmit = document.getElementById("btn-submit");
+    btnSubmit.addEventListener("click", ev=>{
+        ev.preventDefault();
+        const option = document.getElementById('tipoDonante');
+        window.location.href = option.value=='laboratorio' ? 'gracias.html?m=donacion-laboratorio' : 'gracias.html?m=donacion'
+
+    })
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

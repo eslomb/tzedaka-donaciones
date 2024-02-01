@@ -31,8 +31,9 @@
             </header>
     
             <div class="text-center">
-                <div class="thanks-message">
-                    <!-- cambia según opción seleccionada -->
+                <!-- Dejo las diferentes variantes de mensaje, según la opción seleccionada en el paso anterior -->
+
+                <div class="thanks" id="donacion">
                     <h3 class="pt-3 pb-3 color-azul fw-bolder">
                         ¡Muchas gracias<br class="d-sm-none"> por tu ayuda<br> { nombre }!
                     </h3>
@@ -42,6 +43,29 @@
                         <li>{ Direccion / día / hora }</li>
                     </ul>
                     <h5>No olvides rotular tu donación indicando tu nombre y apellido. ¡Saludos!</h5>
+                </div>
+
+                <div class="thanks" id="donacion-laboratorio">
+                    <h3 class="pt-3 pb-3 color-azul fw-bolder">
+                        ¡Muchas gracias<br class="d-sm-none"> por su ayuda!
+                    </h3>
+                    <p>A la brevedad nos contactaremos con ustedes para coordinar la entrega. ¡Saludos!</p>
+                </div>
+
+                <div class="thanks" id="solicitud-particulares">
+                    <h3 class="pt-3 pb-3 color-azul fw-bolder">
+                        Hemos recibido tu solicitud<br class="d-sm-none"> {nombre}.
+                    </h3>
+                    <p>A la brevedad nos contactaremos con vos para informarte la disponibilidad de la medicación. ¡Saludos!</p>
+                </div>
+
+                <div class="thanks" id="solicitud-instituciones">
+                    <h3 class="pt-3 pb-3 color-azul fw-bolder">
+                        Hemos recibido su solicitud.
+                    </h3>
+                    <p>Les avisaremos en cuanto la donación este disponible para ser retirada.
+                    Ante cualquier consulta, pueden contactarse por mail a <a href="mailto:salud@tzedaka.org.ar">salud@tzedaka.org.ar</a> <br>
+                    ¡Muchas gracias!</p>
                 </div>
 
                 <div class="buttons pt-3 d-grid gap-2 mx-auto">
@@ -58,7 +82,17 @@
         </section>
     </main>
 
+    <script>
+        /* Script para mostrar mensaje según opción seleccionada en el paso anterior, tomando en cuenta el querystring.
+        Debería reemplazarse la forma que se muestran según programación final */
+        let messages = document.querySelectorAll('.thanks');
+        messages.forEach(m => m.classList.add('d-none'));
 
+        const urlParams = new URLSearchParams(window.location.search);
+        const message_name = urlParams.get('m');
+        document.querySelector("#" + message_name)?.classList.remove('d-none');
+
+    </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>

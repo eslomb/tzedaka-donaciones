@@ -1,5 +1,5 @@
 @@include('./header.html', {
-    title: 'Solicitud medicamentos. Particulares'
+    title: 'Solicitud medicamentos. Instituciones'
 })
 
 <main class="bg3">
@@ -10,22 +10,15 @@
         <aside>
             @@include('./back-to-home.html')
 
-            <h3 class="text-center fs-4 fw-bold">Solicitud medicamentos.<br>Pacientes particulares</h3>
-            <h4 class="text-center py-4 fs-6 fw-normal">Requisitos:</h4>
+            <h3 class="text-center fs-4 fw-bold">Solicitud medicamentos.<br>Instituciones</h3>
+            <h4 class="text-center py-4 fs-6 fw-normal">Para solicitar medicamentos, deberá contar con:</h4>
 
             <dl class="list azul">
                 <dt><span class="hexagon"><b>1</b></span></dt>
-                <dd>Validez de la receta</dd>
+                <dd>Carta membretada de presentación de la entidad</dd>
             
                 <dt><span class="hexagon"><b>2</b></span></dt>
-                <dd>Prescripta por un profesional médico de un hospital o centro de salud público</dd>
-
-                <dt><span class="hexagon"><b>3</b></span></dt>
-                <dd>El programa es únicamente para pacientes sin cobertura médica</dd>
-            
-                <dt><span class="hexagon"><b>4</b></span></dt>
-                <dd>La entrega de medicamentos está condicionada al stock disponible</dd>
-            
+                <dd>Listado de medicamentos e insumos biomédicos solicitados firmado y sellado por un profesional médico</dd>
             </dl>
 
             @@include('./box.html',
@@ -38,7 +31,7 @@
             )
 
             <div class="buttons pt-3 d-grid gap-2 mx-auto">                
-                <a href="solicitar-particulares-paso2.html" class="btn btn-azul">Siguiente <i class="bi bi-arrow-right-short"></i></a>
+                <a href="solicitar-institucionales-paso2.html" class="btn btn-azul">Siguiente <i class="bi bi-arrow-right-short"></i></a>
             </div>
         </aside>
     </section>
