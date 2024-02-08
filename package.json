@@ -1,6 +1,6 @@
 {
-    "name": "tzeaka-forms",
-    "version": "0.7",
+    "name": "tzedaka-forms",
+    "version": "1.0",
     "description": "Formularios para medicamentos Tzedaka",
     "author": "Esteban Lombardi",
     "scripts": {
