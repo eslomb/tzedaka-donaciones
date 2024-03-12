@@ -9,13 +9,13 @@
     },
     "dependencies": {
         "browser-sync": "^3.0.2",
-        "gulp": "^3.9.1",
-        "gulp-autoprefixer": "^6.1.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^9.0.0",
         "gulp-file-include": "^2.3.0",
-        "gulp-header-comment": "^0.1.0",
+        "gulp-header-comment": "^0.10.0",
         "gulp-rimraf": "^1.0.0",
         "gulp-sass": "^5.1.0",
-        "gulp-sourcemaps": "^2.6.5",
-        "sass": "^1.52.3"
+        "gulp-sourcemaps": "^3.0.0",
+        "sass": "^1.71.1"
     }
 }
